@@ -1,62 +1,4 @@
-# ---- OS / editor ----
-.DS_Store
-.AppleDouble
-.LSOverride
-*.swp
-*.swo
-.vscode/
-.idea/
-
-# ---- Python ----
-__pycache__/
-*.py[codz]
-*$py.class
-*.so
-.Python
-build/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-share/python-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
-MANIFEST
-pip-log.txt
-pip-delete-this-directory.txt
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
-
-# ---- Virtualenv ----
-.venv/
-venv/
-ENV/
-env/
-
-# ---- Node (om ni lägger till site senare) ----
-node_modules/
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# ---- Project outputs ----
+# ---- Outputs (generated) ----
 outputs/
 *.blend1
 *.blend2
@@ -65,6 +7,33 @@ outputs/
 *.bak
 *.BAK
 *.tmp
+*.swp
+*~
 
-# ---- rclone / evidence cache (om relevant) ----
+# ---- Python ----
+__pycache__/
+*.py[codz]
+*$py.class
+
+.venv/
+.env
+
+# ---- OS ----
+.DS_Store
+
+# ---- Editor ----
+.vscode/
+
+# ---- rclone / evidence cache ----
 *.rclone
+
+# ---- Evidence private ----
+evidence/private/
+
+# ---- Broken script backups ----
+tools/*.BROKEN.py
+tools/*.bak.*
+tools/*.BAK.*
+tools/*.tmp
+tools/*.py.BAK.*
+tools/*.py.bak.*
