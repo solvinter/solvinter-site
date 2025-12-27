@@ -150,3 +150,6 @@ def main() -> None:
     subprocess.check_call(cmd, env=env)
     os.unlink(temp_script_path)
     print(f"Done. Outputs in: {outdir}")
+
+if __name__ == "__main__":
+    main()
