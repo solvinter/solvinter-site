@@ -38,6 +38,11 @@ def main() -> None:
     b = data.get("building", data)  # supports nested or flat YAML
     bid = b.get("id", "building")
 
+    # Skip YAMLs that are metadata-only (no geometry yet)
+    if 'footprint' not in b or 'outer' not in b.get('footprint', {}):
+        print(f"SKIP: {bid} (no footprint in YAML)")
+        return
+
     footprint = b["footprint"]["outer"]
     base_h = float(b["base"]["height"])
     wall_h = float(b["walls"]["height"])
