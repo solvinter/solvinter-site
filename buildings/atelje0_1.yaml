@@ -1,12 +1,47 @@
-id: atelje0_1
-status: unregistered
-name: "Ateljé0.1"
+building:
+  id: atelje0_1
+  name: "Ateljé0.1"
+  status: unregistered
+  type: auxiliary
+  units: m
 
-relation:
-  relative_to: main_house_blackrocks
-  direction: NW
-  approx_distance_m: null
+  anchors:
+    door_height_m: 2.0
 
-sources:
-  - photos/atelje0_1/
-  - screenshots/maps/
+  relation:
+    relative_to: main_house_blackrocks
+    direction: NW
+    approx_distance_m: null
+
+  footprint:
+    outer:
+      x: 7.4
+      y: 5.4
+
+  base:
+    height: 0.9
+
+  walls:
+    height: 2.6
+    thickness: 0.15
+
+  roof:
+    type: gable
+    overhang: 0.6
+    ridge_height_above_walls: 1.4
+    material: corrugated_metal
+
+  openings:
+    - type: door
+      wall: front
+      width: 1.0
+      height: 2.0
+      center_offset_x: 0.0
+
+  sources:
+    - photos/atelje0_1/
+    - screenshots/maps/
+
+  assumptions:
+    - "Dimensions are a first blockout estimate, anchored on door height = 2.0 m."
+    - "Replace footprint/base/walls/roof with field measurements when available."
