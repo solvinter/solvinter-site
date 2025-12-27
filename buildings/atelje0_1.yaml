@@ -1,0 +1,12 @@
+id: atelje0_1
+status: unregistered
+name: "Ateljé0.1"
+
+relation:
+  relative_to: main_house_blackrocks
+  direction: NW
+  approx_distance_m: null
+
+sources:
+  - photos/atelje0_1/
+  - screenshots/maps/
