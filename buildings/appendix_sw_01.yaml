@@ -1,0 +1,10 @@
+building:
+  id: appendix_sw_01
+  type: auxiliary
+  status: unregistered
+
+  scale_anchor:
+    door_height_m: 2.0
+
+  notes: >
+    Derived from photos. Located SW of main house.

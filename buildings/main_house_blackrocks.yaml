@@ -1,0 +1,13 @@
+building:
+  id: main_house_blackrocks
+  type: residential
+  status: registered
+
+  evidence:
+    - evidence/land/LandsCommission.pdf
+    - evidence/land/Indentrure.pdf
+    - evidence/planning/Description.pdf
+
+  geometry:
+    footprint:
+      shape: unknown

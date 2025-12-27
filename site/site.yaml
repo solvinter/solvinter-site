@@ -1,0 +1,30 @@
+site:
+  id: blackrocks
+  name: Solvinter Blackrocks Site
+  country: ghana
+  notes: >
+    Main building is the legally documented structure.
+    Appendix building is an additional structure SW of main house (not yet registered).
+
+  reference_point:
+    description: "Chosen anchor point for all measurements"
+    type: corner
+    building_id: main_house_blackrocks
+    corner: SW
+
+  buildings:
+    - id: main_house_blackrocks
+      status: registered
+      sources:
+        - evidence/land/LandsCommission.pdf
+        - evidence/land/Indentrure.pdf
+        - evidence/planning/Description.pdf
+
+    - id: appendix_sw_01
+      status: unregistered
+      relation:
+        relative_to: main_house_blackrocks
+        direction: SW
+        approx_distance_m: null
+      sources:
+        - photos/appendix_sw_01/
