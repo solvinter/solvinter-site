@@ -15,3 +15,7 @@ build-all:
 		echo "==> Building $$b"; \
 		$(PY) -u tools/build_blender.py $$f --outdir outputs/$$b --export-glb --render; \
 	done
+
+# Convenience targets
+atelje0_1:
+	$(MAKE) build BUILDING=atelje0_1

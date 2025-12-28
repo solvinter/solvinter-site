@@ -14,10 +14,18 @@ building:
     approx_distance_m: null
 
   footprint:
-    outer:
-      x: 7.4
-      y: 5.4
+    outer_polygon:  # GOLV / BAS (inkl terrass)
+      - [0.0, 0.0]
+      - [7.4, 0.0]
+      - [7.4, 5.4]
+      - [0.0, 5.4]
 
+    walls_polygon:  # VÄGGAR (indrag + vinkel på SOUTH)
+      - [0.0, 1.5]   # SW vägg in 1.5m från golvkanten
+      - [3.7, 1.5]   # ungefär halva långsidan (justera vid behov)
+      - [7.4, 0.0]   # SE hörn: väggen går hela vägen ut
+      - [7.4, 5.4]
+      - [0.0, 5.4]
   base:
     height: 0.9
 
