@@ -1,0 +1,39 @@
+site:
+  id: solvinter_ghana_mumford
+  name: Solvinter Ghana Site (Mumford)
+  units: m
+
+  location:
+    lat: 5.253615
+    lon: -0.764419
+
+  axes:
+    x: east
+    y: north
+    z: up
+
+  boundary:
+    legal:
+      source: "Plan of Land (edged pink)"
+      area_acres: 1.418
+      area_ha: 0.574
+      area_m2: 5740
+      notes:
+        - "Legal survey area from land plan PDF"
+    measured:
+      source: "Google Maps measure polygon"
+      area_m2: 7556.71
+      perimeter_m: 375.00
+      notes:
+        - "Approx measurement from satellite view; may include land outside legal boundary"
+
+  evidence:
+    land_plan_pdf: "evidence/land/Indentrure.pdf"
+    planning_pdf: "evidence/planning/Description.pdf"
+
+  context:
+    country: Ghana
+    region: Gomoa West / Mumford
+    nearby:
+      - Gulf of Guinea
+      - access road (north)

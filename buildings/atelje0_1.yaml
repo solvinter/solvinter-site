@@ -53,3 +53,11 @@ building:
   assumptions:
     - "Dimensions are a first blockout estimate, anchored on door height = 2.0 m."
     - "Replace footprint/base/walls/roof with field measurements when available."
+
+structure:
+  south_open_wall:
+    posts_per_segment: [4, 3]   # first segment (straight), second segment (diagonal)
+    post_size: 0.09             # ~4x4
+    corner_post_size: 0.14      # thicker SW corner post
+    ring_beam:
+      size: [0.09, 0.18]        # thickness, height (optional)

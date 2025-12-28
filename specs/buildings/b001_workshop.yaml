@@ -1,0 +1,37 @@
+building:
+  id: b001
+  name: workshop_shell
+  units: m
+
+  anchors:
+    door_height: 2.0
+
+  placement:
+    # Local site coordinates (meters). We'll refine once we extract boundary points.
+    position_m: { x: 0.0, y: 0.0, z: 0.0 }
+    rotation_deg: 0.0
+
+  footprint:
+    outer:
+      x: 7.4
+      y: 5.4
+
+  base:
+    height: 0.9
+
+  walls:
+    height: 2.6
+    thickness: 0.15
+
+  roof:
+    type: gable
+    overhang: 0.6
+    ridge_height_above_walls: 1.4
+    material: corrugated_metal
+
+  openings:
+    - type: door
+      wall: front
+      width: 1.0
+      height: 2.0
+      center_offset_x: 0.0
